@@ -18,7 +18,7 @@ io.on("connection", (socket) => {
   // Lắng nghe sự kiện từ client
   socket.on("sync_data", (data) => {
     // Gửi lại dữ liệu cho tất cả client
-    io.emit("sync_data", data);
+    socket.broadcast.emit("sync_data", data);
   });
 });
 
