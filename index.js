@@ -22,7 +22,7 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("sync_data", data);
   });
 });
-const port = 5000
+const port = 3000
 console.log("🚀 ~ port:", port)
 // Chạy server trên cổng 3000
 server.listen( port, () => {
